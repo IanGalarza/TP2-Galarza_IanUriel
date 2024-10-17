@@ -54,12 +54,7 @@ async function loadStatuses(selectId) {
 }
 
 async function loadClients(selectId, defaultText, includeAllClientsOption = false, allOptionText = 'Todas las opciones.') {
-    let clients = getLocalStorageItem('clients');
-
-    if (!clients) {
-        clients = await GetData.Get(API_URLS.GET_CLIENTS);
-        setLocalStorageItem('clients', clients);
-    }
+    const clients = await GetData.Get(API_URLS.GET_CLIENTS);
 
     renderGenericFilterSelect(clients, selectId, defaultText, includeAllClientsOption, allOptionText);
 }
