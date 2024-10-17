@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/main.css">
+
+    <title>MarketingCRM</title>
+</head>
+<body class="site-body">
+    <header class="site-header">
+            <a href="./project.html"><img class="logo" src="./src/img/CRM_Logo.png" alt="Logo del sistema"></a>
+            <h1>MarketingCRM</h1>
+            <nav id="navbar" class="nav">
+                <ul>
+                    <li><a href="./project.html">Proyectos</a></li>
+                </ul>
+            </nav>
+    </header>
+
+    <main class="site-main">
+        <div class="switch-view">
+            <button id="view-projects-btn" class="view-link">Ver Proyectos</button>
+            <button id="create-project-btn" class="view-link">Crear Proyecto</button>
+            <div class="underline" id="underline"></div> 
+        </div>
+         
+        <div class="inform-container"></div>
+
+        <div id="project-view">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Ingrese el nombre del proyecto..." autocomplete="off" />
+                <span class="search-icon">
+                    <img src="./src/img/icono_lupa.png" alt="Buscar" />
+                </span>
+                <div class="filters-container">
+                    <select id="client-select" class="filter-select">
+                        <option value="" disabled selected>Filtrar cliente...</option>
+
+                    </select>
+                    <select id="campaign-type-select" class="filter-select">
+                        <option value="" disabled selected>Filtrar campaña...</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <table id="project-table" class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre del Proyecto</th>
+                        <th>Cliente</th>
+                        <th>Tipo de Campaña</th>
+                        <th>Fecha de Inicio</th>
+                        <th>Fecha de Fin</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="project-table-body">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="create-project-view" class="hidden-view"> 
+            <form id="create-project-form" class="form-container">
+                <label for="project-name" class="full-width-label">Nombre del Proyecto:</label>
+                <input type="text" id="project-name" class="full-width-input" placeholder="Escribe el nombre del proyecto" data-validation="project-name" autocomplete="off">
+                
+                <div class="grid-container">
+                    <div class="form-group">
+                        <label for="client-select-create">Cliente:</label>
+                        <select id="client-select-create" data-validation="client-select-create"></select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="campaign-type-select-create">Tipo de Campaña:</label>
+                        <select id="campaign-type-select-create" data-validation="campaign-type-select-create"></select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="start-datetime">Fecha y Hora de Inicio:</label>
+                        <input type="datetime-local"  id="start-datetime" name="start-datetime" data-validation="start-datetime">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="end-datetime">Fecha y Hora de Fin:</label>
+                        <input type="datetime-local" id="end-datetime" name="end-datetime" data-validation="end-datetime">
+                    </div>
+                </div>
+            
+                <button type="submit" id="add-project-btn" class="add-button">Agregar Proyecto</button>
+            </form>
+        </div>
+
+        <div class="spinner-overlay" class="spinner-overlay hidden"></div>
+
+        <div class="spinner-container">
+            <div class="spinner"></div>
+        </div>
+        
+        <div id="modal-overlay" class="modal-overlay hidden"></div>
+        
+        <div id="project-details-modal" class="modal-details hidden">
+            <div class="modal-content">
+                <span class="close-details-button">&times;</span>
+                <h2 class="modal-title">Detalles del Proyecto</h2>
+                <div class="modal-body-container">
+
+                    <div class="modal-body">
+                        <div class="project-info"></div>
+                        <div class="client-info"></div>
+                    </div>
+
+                    <div class="scrollable-section">
+                        <h3>Interacciones</h3>
+                     <ul class="interactions-list"></ul>
+                    </div>
+
+                    <div class="scrollable-section">
+                        <h3>Tareas</h3>
+                        <ul class="tasks-list"></ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="add-task-button">Agregar Tarea</button>
+                    <button class="add-interaction-button">Agregar Interacción</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="form-overlay" class="form-overlay hidden"></div>
+
+        <div id="generic-modal-form" class="generic-modal-form hidden">
+            <div class="modal-content">
+                <span class="close-form-button">&times;</span>
+                <h2 class="modal-title"></h2>
+                <div class="modal-body-form-container">
+                    <div class="modal-body">
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+            
+    </main>
+    <footer class="site-footer">
+        <div class="footer">
+            <img class="image-footer" src="./src/img/CRM_Logo.png" alt="Logo del sistema">
+            <p class="footer-text">&copy; 2024 | MarketingCRM. Todos los derechos reservados.</p>
+            <p class="footer-text">Desarrollado por Ian Galarza - Proyecto de Software - Universidad Nacional Arturo Jauretche.</p>
+        </div>
+    </footer>
+
+    <script src="./src/js/views/projectApp.js" type="module"></script>
+</body>
+</html>

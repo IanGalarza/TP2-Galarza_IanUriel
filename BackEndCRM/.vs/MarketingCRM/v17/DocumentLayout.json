@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA909A71-E5B9-48E5-AA1E-1A2A8297392F}|MarketingCRM\\MarketingCRM.csproj|c:\\users\\ianga\\onedrive\\escritorio\\prueba de entrega\\tp2-galarza_ianuriel--main\\backendcrm\\marketingcrm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA909A71-E5B9-48E5-AA1E-1A2A8297392F}|MarketingCRM\\MarketingCRM.csproj|solutionrelative:marketingcrm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA909A71-E5B9-48E5-AA1E-1A2A8297392F}|MarketingCRM\\MarketingCRM.csproj|C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\marketingcrm\\controllers\\v1\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA909A71-E5B9-48E5-AA1E-1A2A8297392F}|MarketingCRM\\MarketingCRM.csproj|solutionrelative:marketingcrm\\controllers\\v1\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E103DE87-9297-4DDD-A8A9-CAA3E5E073E8}|Application\\Application.csproj|C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\application\\usecase\\servicetasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E103DE87-9297-4DDD-A8A9-CAA3E5E073E8}|Application\\Application.csproj|solutionrelative:application\\usecase\\servicetasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFB0127B-F641-4BF0-9FA5-627AB763661F}|Infrastructure\\Infrastructure.csproj|C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\infrastructure\\persistence\\crmdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFB0127B-F641-4BF0-9FA5-627AB763661F}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\persistence\\crmdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFB0127B-F641-4BF0-9FA5-627AB763661F}|Infrastructure\\Infrastructure.csproj|C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\infrastructure\\migrations\\20240926225509_newclientseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFB0127B-F641-4BF0-9FA5-627AB763661F}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20240926225509_newclientseeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\MarketingCRM\\Controllers\\V1\\ProjectController.cs",
+              "RelativeDocumentMoniker": "MarketingCRM\\Controllers\\V1\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\MarketingCRM\\Controllers\\V1\\ProjectController.cs",
+              "RelativeToolTip": "MarketingCRM\\Controllers\\V1\\ProjectController.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAmwGEAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T23:42:13.015Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceTasks.cs",
+              "DocumentMoniker": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\Application\\UseCase\\ServiceTasks.cs",
+              "RelativeDocumentMoniker": "Application\\UseCase\\ServiceTasks.cs",
+              "ToolTip": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\Application\\UseCase\\ServiceTasks.cs",
+              "RelativeToolTip": "Application\\UseCase\\ServiceTasks.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAuwDcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-30T01:46:38.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240926225509_NewClientSeedData.cs",
+              "DocumentMoniker": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\Infrastructure\\Migrations\\20240926225509_NewClientSeedData.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20240926225509_NewClientSeedData.cs",
+              "ToolTip": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\Infrastructure\\Migrations\\20240926225509_NewClientSeedData.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20240926225509_NewClientSeedData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:55:10.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CRMDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\Infrastructure\\Persistence\\CRMDbContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Persistence\\CRMDbContext.cs",
+              "ToolTip": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\Infrastructure\\Persistence\\CRMDbContext.cs",
+              "RelativeToolTip": "Infrastructure\\Persistence\\CRMDbContext.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAqwLcAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-26T22:32:37.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\MarketingCRM\\Program.cs",
+              "RelativeDocumentMoniker": "MarketingCRM\\Program.cs",
+              "ToolTip": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\MarketingCRM\\Program.cs",
+              "RelativeToolTip": "MarketingCRM\\Program.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAUwEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T00:47:20.411Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

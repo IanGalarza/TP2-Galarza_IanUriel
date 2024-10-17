@@ -1,0 +1,83 @@
+.add-button {
+    background-color: rgb(32 126 32 / var(--tw-opacity));
+    color: rgb(1 1 1 / var(--tw-opacity));
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+.add-task-button, .add-interaction-button, .save-task-button, .save-interaction-button, .update-task-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(32 126 32 / var(--tw-opacity));
+    color: rgb(1, 1, 1);
+    cursor: pointer;
+}
+
+.add-task-button:hover, .add-interaction-button:hover, .save-task-button:hover, .save-interaction-button:hover, .edit-task-btn:hover {
+    background-color: rgb(102 187 106 / var(--tw-opacity)); 
+}
+
+.edit-task-btn {
+    padding: 5px 10px; 
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(32 126 32 / var(--tw-opacity));
+    color: rgb(1, 1, 1); 
+    cursor: pointer;
+    font-size: 12px;
+}
+#create-project-btn {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(30 30 30 / var(--tw-opacity));
+    color: rgb(255, 255, 255 / var(--tw-opacity));
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#view-projects-btn {
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(30 30 30 / var(--tw-opacity));
+    color: rgb(255, 255, 255 / var(--tw-opacity));
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+#view-projects-btn:hover {
+    background-color: rgb(45 45 45 / var(--tw-opacity));
+}
+
+#create-project-btn:hover {
+    background-color: rgb(45 45 45 / var(--tw-opacity));
+}
+
+#add-project-btn {
+    padding: 1rem;
+    background-color: rgb(32 126 32 / var(--tw-opacity));
+    color: rgb(1, 1, 1);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+
+#add-project-btn:hover {
+    background-color: rgb(102 187 106 / var(--tw-opacity));
+}
+
+button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}

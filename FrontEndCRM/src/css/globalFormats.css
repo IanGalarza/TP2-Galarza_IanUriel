@@ -1,0 +1,58 @@
+:root {
+    --tw-opacity: 1;
+}
+
+html {
+    scrollbar-color: rgb(116, 116, 117) rgb(37, 37, 39);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.site-body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+tr{
+    font-family: 'Poppins', sans-serif;
+}
+
+th{
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-family: 'Poppins', sans-serif;
+}
+
+label{
+    font-family: 'Poppins', sans-serif;
+}
+
+option{
+    font-family: 'Poppins', sans-serif;
+}

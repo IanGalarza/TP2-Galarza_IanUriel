@@ -1,0 +1,11 @@
+.site-main {
+    flex-grow: 1;
+    background-color: rgb(17 17 17 / var(--tw-opacity));
+    padding: 1rem;
+    margin-top: 5rem;
+    overflow-y: auto;
+    width: 100%;
+    color: rgb(255 255 255 / var(--tw-opacity));
+    min-height: 90vh;
+}
+

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "AzjCYbmaZ3VHAc/Xxzit1DcxyoFsX0ySB+C5HsCh15kbxnVzNO9vwQ9whpZmpwumTRd+VPWiXRhV1y1MWLf5jQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ianga\\OneDrive\\Escritorio\\Prueba de entrega\\TP2-Galarza_IanUriel--main\\BackendCRM\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ianga\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
+    "C:\\Users\\ianga\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\ianga\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\ianga\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\ianga\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

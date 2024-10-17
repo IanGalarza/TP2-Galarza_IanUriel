@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MarketingCRM</name>
+    </assembly>
+    <members>
+        <member name="M:MarketingCRM.Controllers.V1.CampaignTypeController.GetAllCampaignTypes">
+            <summary>
+            Retrieves a list of all campaign types.
+            </summary>
+            <response code="200"> Success </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.ClientController.GetAllClients">
+            <summary>
+            Retrieves a list of all clients.
+            </summary>
+            <response code="200"> Success </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.ClientController.CreateClient(Application.DTOs.Request.ClientsRequest)">
+            <summary>
+            Creates a new client with the provided details.
+            </summary>
+            <response code="201"> Success </response>
+            <response code="400"> Bad Request </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.InteractionTypesController.GetAllInteractionTypes">
+            <summary>
+            Retrieves a list of all interaction types.
+            </summary>
+            <response code="200"> Success </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.ProjectController.GetAllProjects(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Retrieves a list of projects based on the provided filters such as project name, campaign type, client, with optional pagination parameters.
+            </summary>
+            <response code="200"> Success </response>
+            <response code="400"> Bad Request </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.ProjectController.CreateProject(Application.DTOs.Request.ProjectRequest)">
+            <summary>
+            Creates a new project with the specified details.
+            </summary>
+            <response code="201"> Success </response>
+            <response code="400"> Bad Request </response>
+            <response code="409"> Conflict </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.ProjectController.GetByIdProject(System.Guid)">
+            <summary>
+            Retrieves detailed information about a specific project by its ID.
+            </summary>
+            <response code="200"> Success </response>
+            <response code="404"> Not Found </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.ProjectController.AddNewInteraction(System.Guid,Application.DTOs.Request.InteractionsRequest)">
+            <summary>
+            Adds a new interaction to an existing project.
+            </summary>
+            <response code="201"> Success </response>
+            <response code="400"> Bad Request </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.ProjectController.AddNewTask(System.Guid,Application.DTOs.Request.TasksRequest)">
+            <summary>
+            Adds a new task to an existing project.
+            </summary>
+            <response code="201"> Success </response>
+            <response code="400"> Bad Request </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.ProjectController.UpdateTask(System.Guid,Application.DTOs.Request.TasksRequest)">
+            <summary>
+            Updates an existing task with the specified details.
+            </summary>
+            <response code="200"> Success </response>
+            <response code="400"> Bad Request </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.TaskStatusController.GetAllTaskStatus">
+            <summary>
+            Retrieves a list of all task statuses.
+            </summary>
+            <response code="200"> Success </response>
+        </member>
+        <member name="M:MarketingCRM.Controllers.V1.UserController.GetAllUsers">
+            <summary>
+            Retrieves a list of all users.
+            </summary>
+            <response code="200"> Success </response>
+        </member>
+    </members>
+</doc>

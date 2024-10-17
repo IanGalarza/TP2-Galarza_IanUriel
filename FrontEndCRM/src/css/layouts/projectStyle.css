@@ -1,0 +1,207 @@
+/* Tabla de Proyectos */
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    text-align: left;
+    table-layout: fixed;
+}
+
+.styled-table thead tr {
+    background-color: rgb(30 30 30 / var(--tw-opacity));
+    color: rgb(255 255 255 / var(--tw-opacity));
+    text-align: left;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    width: 150px;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid rgb(53 53 53 / var(--tw-opacity));
+    min-height: 100px;
+}
+
+.styled-table tbody tr:hover {
+    background-color: rgb(45 45 45 / var(--tw-opacity));
+}
+
+.action-icon {
+    width: 25px;
+    height: 25px; 
+    margin: 0 5px; 
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+
+.action-icon:hover {
+    transform: scale(1.1); 
+}
+
+.action-icon[alt="Ver Detalles"] {
+    filter: brightness(0.7); 
+}
+
+.action-icon[alt="Agregar Tarea"] {
+    filter: brightness(0.7); 
+}
+
+.action-icon[alt="Agregar Interacción"] {
+    filter: brightness(0.7);
+}
+
+
+/* Busqueda */
+
+.search-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-items: center;
+    max-width: 1000px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px 40px 10px 10px; 
+    font-size: 1rem;
+    border: 2px solid #444; 
+    border-radius: 15px;
+    background-color: rgb(27 27 27 / var(--tw-opacity));
+    color: rgb(255 255 255 / var(--tw-opacity));
+    outline: none; 
+}
+
+#search-input::placeholder {
+    color: #bbb; 
+}
+
+.search-icon {
+    position: absolute;
+    right: 630px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.search-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.filters-container {
+    display: flex; 
+    gap: 10px; 
+}
+
+.filter-select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #444; 
+    border-radius: 15px; 
+    background-color: rgb(27 27 27 / var(--tw-opacity));
+    color: rgb(255, 255, 255 / var(--tw-opacity));
+    outline: none; 
+    width: 300px; 
+    margin-left: 5px;
+}
+
+.filter-select::placeholder {
+    color: #bbb; 
+}
+
+/* View Switcher */
+
+.switch-view {
+    margin-top: 20px; 
+    padding-bottom: 1rem;
+    width: 100%;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px; 
+    position: relative; 
+}
+
+.hidden-view {
+    display: none;
+}
+
+.view-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255 / var(--tw-opacity));
+    text-decoration: none; 
+    margin-right: 20px;
+}
+
+.switch-divider {
+    border-top: 1px solid #333; 
+    margin: 10px 0; 
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 1); 
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.full-width-label, .full-width-input {
+    grid-column: span 2;
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.9); 
+}
+
+.grid-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+#create-project-form input,
+#create-project-form select {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgba(45, 45, 45, 0.9); 
+    color: rgb(255 255 255 / var(--tw-opacity));
+}
+
+#create-project-form input:focus,
+#create-project-form select:focus {
+    outline: none;
+}
