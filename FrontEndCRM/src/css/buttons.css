@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 
-.add-task-button:hover, .add-interaction-button:hover, .save-task-button:hover, .save-interaction-button:hover, .edit-task-btn:hover {
+.add-task-button:hover, .add-interaction-button:hover, .save-task-button:hover, .save-interaction-button:hover, .edit-task-btn:hover, .update-task-button:hover{
     background-color: rgb(102 187 106 / var(--tw-opacity)); 
 }
 

@@ -157,7 +157,7 @@ function validateNameField(value) {
     }
 }
 
-//Validar Form una cuando se realiza un submit
+//Validar Project Form una cuando se realiza un submit
 
 export function validateProjectForm() {
     const createProjectForm = document.getElementById('create-project-form');
