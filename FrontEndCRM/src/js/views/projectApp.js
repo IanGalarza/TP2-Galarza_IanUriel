@@ -6,7 +6,7 @@ import { resetFormValidation  } from "../components/ValidationHandler.js";
 
 import { validateCreateProjectFormField } from '../components/ValidationHandler.js';
 import { loadFilterData, loadCreateData} from '../components/dataLoader.js';
-import { API_URLS , setLocalStorageItem, updateProjectNames, showSpinner, hideSpinner, sortProjectsByName} from '../components/utilities.js';
+import { API_URLS , setLocalStorageItem, updateProjectNames, showSpinner, hideSpinner, sortProjectsByName, clearLocalStorage, removeLocalStorageItem} from '../components/utilities.js';
 import { closeDetailsModal, closeGenericFormModal } from '../components/modalManager.js';
 import { getProjectFormData} from '../components/formData.js';
 import { handleAddInteraction, handleAddTask, openProjectDetailsModal } from '../components/modalHandlers.js';
@@ -240,8 +240,6 @@ function configureCreateProjectForm() {
 
 function configureModalActions() {
     const viewDetailsButtons = document.querySelectorAll('.view-details');
-    const addTaskButton = document.querySelector('.add-task-button');
-    const addInteractionButton = document.querySelector('.add-interaction-button');
     const addTableTaskButtons = document.querySelectorAll('.add-task');
     const addTableInteractionButtons = document.querySelectorAll('.add-interaction');
 
@@ -250,14 +248,6 @@ function configureModalActions() {
             const projectId = button.dataset.projectId;
             openProjectDetailsModal(projectId); 
         });
-    });
-
-    addTaskButton.addEventListener('click', (event) => { 
-        handleAddTask(event.target, true);        
-    });
-
-    addInteractionButton.addEventListener('click', (event) => {
-        handleAddInteraction(event.target, true);  
     });
 
     addTableTaskButtons.forEach(button => {

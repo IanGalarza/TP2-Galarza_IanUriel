@@ -62,11 +62,21 @@ export async function handleEditTask(button){
 
 function configureProjectDetailsActions() {
     const editTaskButtons = document.querySelectorAll('.edit-task-btn'); 
+    const addTaskButton = document.querySelector('.add-task-button');
+    const addInteractionButton = document.querySelector('.add-interaction-button');
 
     editTaskButtons.forEach(button => {
         button.addEventListener('click', (event) => {
-            handleEditTask(event.target);       
+            handleEditTask(event.target);
         });
+    });
+
+    addTaskButton.addEventListener('click', (event) => { 
+        handleAddTask(event.target, true);
+    });
+
+    addInteractionButton.addEventListener('click', (event) => {
+        handleAddInteraction(event.target, true);
     });
 }
 

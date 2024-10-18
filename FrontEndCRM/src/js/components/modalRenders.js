@@ -1,5 +1,4 @@
 export function renderProjectDetails(projectData) {
-
     const projectInfo = document.querySelector('#project-details-modal .project-info');
     const clientInfo = document.querySelector('#project-details-modal .client-info');
     const interactionsList = document.querySelector('#project-details-modal .interactions-list');
@@ -77,11 +76,20 @@ export function renderProjectDetails(projectData) {
         tasksList.appendChild(noTasksMsg);
     }
 
-    const taskButton = modalFooter.querySelector('.add-task-button');
-    taskButton.setAttribute('data-project-id', project.id);
+    const addTaskButton = document.createElement('button');
+    addTaskButton.classList.add('add-task-button');
+    addTaskButton.textContent = 'Agregar Tarea';
+    addTaskButton.setAttribute('data-project-id', project.id);
 
-    const interactionButton = modalFooter.querySelector('.add-interaction-button');
-    interactionButton.setAttribute('data-project-id', project.id);
+    const addInteractionButton = document.createElement('button');
+    addInteractionButton.classList.add('add-interaction-button');
+    addInteractionButton.textContent = 'Agregar Interacción';
+    addInteractionButton.setAttribute('data-project-id', project.id);
+
+    modalFooter.innerHTML = '';
+    
+    modalFooter.appendChild(addTaskButton);
+    modalFooter.appendChild(addInteractionButton);
 }
 
 export function renderTaskForm(IsEdit) {

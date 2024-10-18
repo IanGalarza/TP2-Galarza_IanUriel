@@ -21,34 +21,19 @@ export async function loadCreateData() {
 }
 
 export async function loadInteractionTypes(selectId) {
-    let interactionTypes = getLocalStorageItem('interactionTypes');
-
-    if (!interactionTypes) {
-        interactionTypes = await GetData.Get(API_URLS.GET_INTERACTION_TYPES); 
-        setLocalStorageItem('interactionTypes', interactionTypes);
-    }
+    const interactionTypes = await GetData.Get(API_URLS.GET_INTERACTION_TYPES); 
 
     renderGenericSelect(interactionTypes, selectId, 'Seleccionar tipo de interacción...'); 
 }
 
 async function loadUsers(selectId) {
-    let users = getLocalStorageItem('users');
-
-    if (!users) {
-        users = await GetData.Get(API_URLS.GET_USERS);
-        setLocalStorageItem('users', users);
-    }
+    const users = await GetData.Get(API_URLS.GET_USERS);
 
     renderGenericSelect(users, selectId, 'Seleccionar usuario...');
 }
 
 async function loadStatuses(selectId) {
-    let statuses = getLocalStorageItem('statuses');
-
-    if (!statuses) {
-        statuses = await GetData.Get(API_URLS.GET_TASK_STATUS);
-        setLocalStorageItem('statuses', statuses);
-    }
+    const statuses = await GetData.Get(API_URLS.GET_TASK_STATUS);
 
     renderGenericSelect(statuses, selectId, 'Seleccionar estado...');
 }
@@ -60,12 +45,7 @@ async function loadClients(selectId, defaultText, includeAllClientsOption = fals
 }
 
 async function loadCampaignTypes(selectId, defaultText, includeAllCampaignTypesOption = false, AllOptionText = 'Todas las opciones.') {
-    let campaignTypes = getLocalStorageItem('campaignTypes');
-
-    if (!campaignTypes) {
-        campaignTypes = await GetData.Get(API_URLS.GET_CAMPAIGN_TYPES);
-        setLocalStorageItem('campaignTypes', campaignTypes);
-    }
+    const campaignTypes = await GetData.Get(API_URLS.GET_CAMPAIGN_TYPES);
 
     renderGenericFilterSelect(campaignTypes, selectId, defaultText, includeAllCampaignTypesOption, AllOptionText);
 }
