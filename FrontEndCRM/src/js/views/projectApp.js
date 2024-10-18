@@ -6,7 +6,7 @@ import { resetFormValidation  } from "../components/ValidationHandler.js";
 
 import { validateCreateProjectFormField } from '../components/ValidationHandler.js';
 import { loadFilterData, loadCreateData} from '../components/dataLoader.js';
-import { API_URLS , setLocalStorageItem, updateProjectNames, showSpinner, hideSpinner, sortProjectsByName, clearLocalStorage, removeLocalStorageItem} from '../components/utilities.js';
+import { API_URLS , setLocalStorageItem, updateProjectNames, showSpinner, hideSpinner, sortProjectsByName} from '../components/utilities.js';
 import { closeDetailsModal, closeGenericFormModal } from '../components/modalManager.js';
 import { getProjectFormData} from '../components/formData.js';
 import { handleAddInteraction, handleAddTask, openProjectDetailsModal } from '../components/modalHandlers.js';
