@@ -28,8 +28,6 @@ export async function modalUpdateTaskForm(taskId) {
             showSpinner();
 
             const response = await PutData.Put(API_URLS.UPDATE_TASK(taskId), requestData);  
-
-            console.log(response);
             
             hideSpinner();
 
