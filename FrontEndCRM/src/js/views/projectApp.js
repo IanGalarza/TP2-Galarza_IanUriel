@@ -20,7 +20,7 @@ function initializeApp() {
     loadFilterData();
     configureViews();
     configureCreateProjectForm();
-    configureModalActions();
+    configureModalClose();
 }
 
 //lista de proyectos
@@ -257,7 +257,9 @@ function configureModalActions() {
     addTableInteractionButtons.forEach(button => {
         button.addEventListener('click', () => handleAddInteraction(button, false));
     });
+}
 
+function configureModalClose(){
     document.addEventListener('click', (event) => {
         const closeBtn = event.target.closest('.close-details-button');
         if (closeBtn) {

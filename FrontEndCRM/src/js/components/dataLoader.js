@@ -1,5 +1,4 @@
 import GetData  from '../services/getData.js';
-import { setLocalStorageItem, getLocalStorageItem } from '../components/utilities.js';
 import { API_URLS } from '../components/utilities.js';
 import { renderGenericSelect, renderGenericFilterSelect } from '../components/selectRenders.js';
 

@@ -23,6 +23,7 @@ export function openGenericFormModal() {
     modal.classList.remove('hidden'); 
     modal.classList.add('active');
     overlay.classList.add('active');
+
 }
 
 export function closeGenericFormModal() {
